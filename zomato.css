@@ -1,0 +1,379 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    box-sizing: border-box;
+}
+
+.hero_section {
+    background-image: url('mac.jpeg');
+    flex-wrap: wrap;
+    background-size: cover;
+    min-height: 60vh;
+    color: black;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 48px;
+    height: 60px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: black;
+}
+
+.navbar_menu_container {
+    display: flex;
+    gap: 20px;
+}
+
+.hero_section_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    height: calc(60vh - 60px);
+}
+
+.hero_section_logo {
+    width: 200px;
+}
+
+.hero_section_title {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.hero_section_input_container {
+    background-color: white;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 50%;
+    border-radius: 10px;
+    flex-direction: row;
+}
+
+.input_container_location,
+.input_container_search {
+    padding: 5px;
+    border: none;
+    outline: none;
+}
+
+.input_container_search {
+    width: 65%;
+}
+
+.input_container_location {
+    width: 35%;
+    border-right: 2px solid #e0e0e0;
+}
+
+.navbar_menu_container .user_icon {
+    border: solid 1px white;
+    height: 30px;
+    width: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    display: none;
+}
+
+@media only screen and (max-width:600px) {
+    .navbar_menu_container .link {
+        display: none;
+    }
+    .navbar {
+        padding: 16px;
+    }
+    .navbar_menu_container .user_icon {
+        display: flex;
+    }
+    .hero_section {
+        min-height: 80vh;
+    }
+    .hero_section_input_container {
+        flex-direction: column;
+        background-color: transparent;
+        width: 100%;
+    }
+    .input_container_location,
+    .input_container_search {
+        padding: 15px;
+        border: none;
+        outline: none;
+        border-radius: 10px;
+        width: 80%;
+    }
+    .hero_section_container {
+        height: calc(80vh -60px);
+    }
+    .hero_section_title {
+        font-size: 20px;
+        width: 80%;
+    }
+}
+
+.container {
+    margin: 48px auto;
+    width: 80%;
+}
+
+.we_offer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    justify-content: center;
+    align-items: center;
+}
+
+.we_offer .card {
+    border-radius: 10px;
+    border: 1px solid #e0e0e0;
+    overflow: hidden;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.we_offer .card:hover {
+    transition: scale(200);
+}
+
+.we_offer .card img {
+    background-size: 100%;
+    background-position: center;
+    height: 240px;
+    width: 350px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.we_offer .card h2 {
+    padding: 0 10px;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.we_offer .card p {
+    padding: 0 10px 10px 10px;
+    font-size: 10px;
+}
+
+.collections {
+    font-weight: 200;
+}
+
+.collections h1 {
+    padding: 0px 40px 0px 40px;
+}
+
+.collections .sub_heading_container {
+    padding: 0px 40px 0px 40px;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.sub_heading_container span:nth-child(2) {
+    color: #ff7e8b;
+    font-size: 13px;
+}
+
+.collections_card_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 24px;
+}
+
+.collections_card_container .card {
+    height: 300px;
+    min-width: 280px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    position: relative;
+}
+
+.card1 {
+    background-image: url("newfood.jpeg");
+}
+
+.card2 {
+    background-image: url("burger.jpeg");
+}
+
+.card3 {
+    background-image: url("chole\ bhature.jpeg");
+}
+
+.card4 {
+    background-image: url("chowmin.jpeg");
+}
+
+.overlay {
+    display: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    border-radius: 10px;
+    background: linear-gradient( 0deg, rgba(0, 0, 0, 0.9) 0% rgba(0, 0, 0, 0.05) 50%rgba(0, 0, 0, 0.05) 85%);
+}
+
+.collections_card_container .card .content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    color: white;
+    padding: 12 px 16px;
+    font-size: 14px;
+}
+
+.get_the_app {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(255, 251, 247);
+    width: 100%;
+    padding: 3rem 6rem;
+}
+
+.get_the_app .semicontainer {
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 24px;
+}
+
+.get_the_app .semicontainer .left {
+    flex: 2;
+}
+
+.get_the_app .semicontainer .left img {
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.get_the_app .semicontainer .right {
+    flex: 3;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.right h1 {
+    font-weight: 600;
+    font-size: 32px;
+}
+
+.right p {
+    font-size: 12px;
+}
+
+.semicontainer .right .radio_button_container {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.semicontainer.right .radio_button_container div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.right .radio_button_container div input {
+    height: 16px;
+    width: 16px;
+    accent-color: rgb(239, 79, 95);
+}
+
+.semicontainer.right .input_container {
+    display: flex;
+    gap: 8px;
+}
+
+.input_container input,
+.input_container buttoh {
+    padding: 10px 12px;
+}
+
+.semicontainer .right .input_container input {
+    border: 1.5px solid gray;
+    outline: none;
+    border-radius: 5px;
+    float: auto;
+}
+
+.input_container button {
+    border: none;
+    background-color: rgb(239, 79, 95);
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.right .download_app_container {
+    display: flex;
+    flex-direction: column;
+    gap: 11px;
+}
+
+.download_app_container div {
+    display: flex;
+    gap: 16px;
+}
+
+.download_app_container div img {
+    width: 35%;
+}
+
+@media only screen and(max-width:1300px) {
+    .get_the_app .semicontainer .right,
+    .get_the_app .semicontainer .left {
+        flex: 1;
+    }
+    .get_the_app .semicontainer {
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width:900px) {
+    .get_the_app {
+        padding: 32px;
+    }
+    .get_the_app .semicontainer {
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width:700px) {
+    .get_the_app {
+        padding: 3rem 0;
+    }
+    .get_the_app .semicontainer {
+        width: 80%;
+        flex-direction: column;
+    }
+}
