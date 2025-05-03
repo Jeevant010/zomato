@@ -190,6 +190,41 @@
  .scroller_lower_inside_content p {
      font-size: 1.2rem;
  }
+
+ @media only screen and (max-width:600px) {
+    .navbar_menu_container .link {
+        display: none;
+    }
+    .navbar {
+        padding: 16px;
+    }
+    .navbar_menu_container .user_icon {
+        display: flex;
+    }
+    .hero_section {
+        min-height: 80vh;
+    }
+    .hero_section_input_container {
+        flex-direction: column;
+        background-color: transparent;
+        width: 100%;
+    }
+    .input_container_location,
+    .input_container_search {
+        padding: 15px;
+        border: none;
+        outline: none;
+        border-radius: 10px;
+        width: 80%;
+    }
+    .hero_section_container {
+        height: calc(80vh -60px);
+    }
+    .hero_section_title {
+        font-size: 20px;
+        width: 80%;
+    }
+}
  
  .container {
      margin: 48px auto;
